@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  Container,
+  Row,
+  Col
+} from 'react-bootstrap';
+import UploadForm from './UploadForm.js';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Bearn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container fluid>
+        <Row>
+	  <Col>
+	    <UploadForm />
+	  </Col>
+	</Row>
+      </Container>
+    </>
   );
 }
 
-export default App;
